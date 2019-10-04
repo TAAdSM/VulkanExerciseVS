@@ -161,6 +161,7 @@ private:
 	void initVulkan() {
 		createInstance();
 		setupDebugMessenger();
+		pickPhysicalDevice();
 	}
 
 	bool isDeviceSuitable(VkPhysicalDevice device) {
